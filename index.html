@@ -30,13 +30,13 @@
           <span class="_mycom text-white">ForestCineplex</span>
         </a>
         <div class="d-none d-md-inline-flex justify-content-center flex-grow-1">
-          <a href="#" id="btn-buy-ticket" class="_btn-pri btn mx-1">
-            <img src="./src/assets/images/ic-ticket.svg" alt="">
-            Đặt vé ngay
+          <a href="#" id="btn-buy-ticket" class="_btn-pri btn mx-1 d-flex align-items-center">
+            <img src="./src/assets/images/ic-ticket.svg" width="20px" alt="">
+            <span class="_lb-btn-nav _font-anton text-uppercase ms-1">Đặt vé ngay</span>
           </a>
-          <a href="#" id="btn-order-food" class="_btn-second btn mx-1">
-            <img src="./src/assets/images/ic-cor.svg" alt="">
-            Đặt bắp nước
+          <a href="#" id="btn-order-food" class="_btn-second btn mx-1 d-flex align-items-center">
+            <img src="./src/assets/images/ic-cor.svg" width="20px" alt="">
+            <span class="_font-anton text-uppercase ms-1">Đặt bắp nước</span>
           </a>
         </div>
 
@@ -53,7 +53,7 @@
           </a>
         </div>
 
-        <!-- Mobile-nav  -->
+        <!-- Mobile-menu  -->
 
         <div class="d-md-none">
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
@@ -104,6 +104,9 @@
             </div>
           </div>
         </div>
+
+
+        <!-- End: Mobile-nav  -->
 
 
 
@@ -157,12 +160,25 @@
 
       </div>
     </nav>
+
+    <nav></nav>
   </header>
 
   <div id="main">
     <div class="container pt-md-5 w-100" style="height: 20000px;">
       <!-- Begin: Slider  -->
-      <div id="_silder carousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="carousel" class="_silder carousel slide position-relative" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators position-absolute d-md-none" >
+          <button class="_btn-carousel-circle active mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button class="_btn-carousel-circle mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button class="_btn-carousel-circle mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button class="_btn-carousel-circle mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button class="_btn-carousel-circle mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button class="_btn-carousel-circle mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button class="_btn-carousel-circle mx-2" type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./src/assets/images/film/civil-war.webp" class="d-block w-100" alt="...">
@@ -254,17 +270,13 @@
             </select>
           </div>
 
-          <div class="col col-12 col-md-2 text-center mt-2 my-mt-0 ">
+          <div class="col col-12 col-md-2 text-center mt-2 mt-md-0 ">
             <a href="#" class="_btn-book-now _font-anton btn w-75 text-white text-uppercase">Đặt ngay</a>
           </div>
         </form>
 
       </div>
       
-
-
-
-
     </div>
   </div>
 
