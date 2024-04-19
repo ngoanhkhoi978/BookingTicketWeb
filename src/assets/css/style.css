@@ -340,6 +340,53 @@
     bottom: 10px;
 }
 
+#main #slider-film-future-mobile .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+}
+
+#main #slider-film-future .carousel-indicators {
+    position: absolute;
+    bottom: -50px;
+}
+
+#main ._container-show {
+    margin-left: -21px;
+    margin-right: -21px;
+}
+
+
+#main ._introduce-membership ._card-member, #main ._introduce-membership ._card-vip {
+    background-color: rgba(100, 100, 100, 0.7);
+    border-radius: 10px;
+
+}
+
+#main ._introduce-membership ._card-member  .card-title {
+    color: rgb(132, 71, 192);
+}
+#main ._introduce-membership ._card-member  .card-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+#main ._introduce-membership ._card-vip  .card-title {
+    color: rgb(255, 119, 1)
+}
+#main ._introduce-membership ._card-vip  .card-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+#main ._introduce-membership .card-title {
+    font-family: 'Anton', sans-serif;
+}
+
+#main ._introduce-membership .card-text {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
 
 
 

@@ -54,7 +54,6 @@
         </div>
 
         <!-- Mobile-menu  -->
-
         <div class="d-md-none">
           <button id="btn-menu-mobile" class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -105,8 +104,6 @@
             </div>
           </div>
         </div>
-
-
         <!-- End: Mobile-nav  -->
 
 
@@ -162,6 +159,8 @@
       </div>
     </nav>
 
+
+    <!-- Begin: Nav-fixed-bottom mobile  -->
     <nav class="_navbar-bottom-mobile navbar fixed-bottom bg-body-tertiary d-md-none ">
       <div class="container-fluid row g-0">
         <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
@@ -186,6 +185,7 @@
         </a>
       </div>
     </nav>
+    <!-- End: Nav-fixed-bottom mobile  -->
   </header>
 
   <div id="main">
@@ -315,7 +315,7 @@
       </div>
       <!-- End: Booking quick  -->
 
-      <div class="mt-5">
+      <div class="_container-show mt-5">
         <h1 class="_font-anton h1 text-white text-center text-uppercase mb-md-5 mb-0 w-100">Phim đang chiếu</h1>
 
         <!-- PC & Tablet - Film showing -->
@@ -672,7 +672,7 @@
   
                 <div class="flex-grow-1 d-flex justify-content-center">
                   <div class="_card card bg-transparent border-0" style="width: 90%;">
-                    <img src="./src/assets/images/film/showing/film (34).webp" class="card-img-top" alt="...">
+                    <img src="./src/assets/images/film/showing/film (31).webp" class="card-img-top" alt="...">
                     <div class="card-body px-0">
                       <div style="min-height: 60px;">
                         <p class="card-title text-uppercase text-white text-center">Monkey Man báo thù (T18)"</p>
@@ -693,11 +693,11 @@
               
           </div>
             
-            <button class="carousel-control-prev" type="button" data-bs-target="#slider-film-showing" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider-film-showing" data-bs-slide="prev" style="left: -150px;">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#slider-film-showing" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#slider-film-showing" data-bs-slide="next" style="right: -150px;">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -1142,9 +1142,856 @@
         </div>
       </div>
 
-      <div class="mt-5 pt-md-5">
-        <h1 class="_font-anton h1 text-white text-center text-uppercase">Phim sắp chiếu</h1>
+      <div class="mt-5 pt-md-5 _container-show">
+        <h1 class="_font-anton h1 text-white text-center text-uppercase mb-md-5 mb-0 w-100">Phim sắp chiếu</h1>
+
+        <!-- PC & Tablet - Film upcoming -->
+        <div id="slider-film-future" class="carousel slide position-relative d-none d-md-block" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button class="_btn-carousel-circle mx-3 active" type="button" data-bs-target="#slider-film-future" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button class="_btn-carousel-circle mx-3" type="button" data-bs-target="#slider-film-future" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button class="_btn-carousel-circle mx-3" type="button" data-bs-target="#slider-film-future" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button class="_btn-carousel-circle mx-3" type="button" data-bs-target="#slider-film-future" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button class="_btn-carousel-circle mx-3" type="button" data-bs-target="#slider-film-future" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button class="_btn-carousel-circle mx-3" type="button" data-bs-target="#slider-film-future" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex">
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (26).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Lật mặt 7: Một điều ước (K)</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (19).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Vây hãm: Kẻ trừng phạt (T18)</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (24).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Tà khúc triệu vong (T18)</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex">
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (12).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Panda đại náo lãnh địa vua sư tử</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (2).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Tarot</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (16).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Hành tinh khỉ"</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex">
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (13).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Những kẻ thách đấu</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (39).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">ABIGAIL</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (14).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Những người bạn tưởng tượng"</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex">
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (17).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Furiosa: Câu chuyện từ Max điên</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (18).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Doraemon:Nobia và bản giao hưởng địa cầu</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (3).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Garfield - Mèo béo siêu quậy</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex">
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (15).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Ngôi đền kỳ quái (T16)</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (10).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Những kẻ theo dõi</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (11).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Những mảnh ghép cảm xúc 2"</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex">
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (8).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Kẻ trộm mặt trăng 4</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (6).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Joker: Điên có đôi</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="flex-grow-1 d-flex justify-content-center">
+                  <div class="_card card bg-transparent border-0" style="width: 90%;">
+                    <img src="./src/assets/images/film/showing/film (5).webp" class="card-img-top" alt="...">
+                    <div class="card-body px-0">
+                      <div style="min-height: 60px;">
+                        <p class="card-title text-uppercase text-white text-center">Ngày xưa có một chuyện tình"</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                          <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                          <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                        </a>
+                        <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+              
+          </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider-film-future" data-bs-slide="prev" style="left: -150px;">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider-film-future" data-bs-slide="next" style="right: -150px;">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Mobile - Film upcoming   -->
+        <div id="slider-film-future-mobile" class="carousel slide position-relative d-md-none p-5" data-bs-ride="carousel">
+          <div class="carousel-indicators mx-1">
+            <button class="_btn-carousel-circle mx-1 active" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="10" aria-label="Slide 11"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="11" aria-label="Slide 12"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="12" aria-label="Slide 13"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="13" aria-label="Slide 14"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="14" aria-label="Slide 15"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="15" aria-label="Slide 16"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="16" aria-label="Slide 17"></button>
+            <button class="_btn-carousel-circle mx-1" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide-to="17" aria-label="Slide 18"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (26).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Lật mặt 7: Một điều ước (K)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (19).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Vây hãm: Kẻ trừng phạt (T18)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (24).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Tà khúc triệu vong (T18)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (12).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Panda đại náo lãnh địa vua sư tử</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (2).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Tarot</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (16).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Hành tinh khỉ</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (13).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Những kẻ thách đấu</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (39).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">ABIGAIL</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (14).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Những người bạn tưởng tượng</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (17).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Furiosa: Câu chuyện từ Max điên</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (18).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Doraemon: Nobita và bản giao hưởng địa cầu</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (3).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Garfield - Mèo béo siêu quậy</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (15).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Ngôi đền kỳ quái 4 (T16)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (10).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Những người theo dõi</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (11).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Những mảnh ghép cảm xúc 2</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (8).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Kẻ trộm mặt trăng 4</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (6).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Joker: Điên có đôi</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center">
+                <div class="_card card bg-transparent border-0" style="width: 90%;">
+                  <img src="./src/assets/images/film/showing/film (5).webp" class="card-img-top" alt="...">
+                  <div class="card-body px-0">
+                    <div style="min-height: 60px;">
+                      <p class="card-title text-uppercase text-white text-center">Ngày xưa có một chuyện tình</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="flex-grow-1 d-md-flex d-none align-items-center">
+                        <img src="./src/assets/images/ic-play-vid.svg" width="22px" alt="">
+                        <span class="text-white text-decoration-underline _weight-500 ">Xem Trailer</span>
+                      </a>
+                      <a href="#" class="_btn-pri _font-anton btn px-4 flex-grow-1">Tìm hiểu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+       
+          </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider-film-future-mobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <div class="d-flex w-100 justify-content-center mt-md-5 pt-md-4">
+          <a href="" class="_btn-outline _font-anton btn py-2 px-5">Xem thêm</a>
+        </div>
       </div>
+
+      <div class="_introduce-membership mt-5 position-relative">
+        <img src="./src/assets/images/bg-cine.png" alt="" class="flex-grow-1" style="width: 100%; filter: blur(5px);">
+        <div class="position-absolute top-0 end-0 bottom-0 start-0 d-flex align-items-md-center justify-content-around flex-column-reverse flex-md-row">
+
+          <div class="_card-member border-1 border-primary m-md-4" style="">
+            <div class="card-body">
+              <h3 class="card-title">Thành viên F'Friend</h3>
+              <p class="card-text d-none d-md-block">Tham gia ngay F'Friend của ForestCineplex để nhận vô vàng các ưu đãi hấp dẫn cho thành viên mới.</p>
+              <a href="#" class="_btn-second btn">Tìm hiểu ngay</a>
+            </div>
+          </div>
+          
+          <div class="_card-vip border-1 border-primary m-md-4">
+            <div class="card-body">
+              <h3 class="card-title">Thành viên F'VIP</h3>
+              <p class="card-text d-none d-md-block">Đăng ký thành viên F'VIP và đồng hành với ForestCineplex sẽ mang đến nhưng trãi nghiệm và những ưu đãi độc quyền</p>
+              <a href="#" class="_btn-pri btn">Tìm hiểu ngay</a>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+
 
 
       </div>
