@@ -56,7 +56,7 @@
         <!-- Mobile-menu  -->
 
         <div class="d-md-none">
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          <button id="btn-menu-mobile" class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <i class="bi bi-list text-white" style="font-size: 28px;"></i>
           </button>
@@ -67,7 +67,7 @@
                 <img src="./favicon.ico" width="40px" alt="">
                 <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel _weight-500">ForestCineplex</h5>
               </div>
-              <a type="button" class="position-absolute top-0 end-0 px-4" data-bs-dismiss="offcanvas"
+              <a type="button" class="_btn-close-menu-mobile position-absolute top-0 end-0 px-4" data-bs-dismiss="offcanvas"
                 aria-label="Close">
                 <i class="bi bi-x text-white" style="font-size: 40px;"></i>
               </a>
@@ -162,7 +162,30 @@
       </div>
     </nav>
 
-    <nav></nav>
+    <nav class="_navbar-bottom-mobile navbar fixed-bottom bg-body-tertiary d-md-none ">
+      <div class="container-fluid row g-0">
+        <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+          <img src="./src/assets/images/ic-movie.svg" height="24px" style="filter: invert(1);" alt="">
+          Lịch chiếu
+        </a>
+        <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+          <img src="./src/assets/images/ic-cor.svg" alt="" height="24px" >
+          Bắp nước
+        </a>
+        <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+          <img src="./src/assets/images/ic-ticket.svg" alt="" height="24px" style="filter: invert(1);">
+          Đặt vé
+        </a>
+        <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+          <img src="./src/assets/images/ic-mobile-gift.svg" alt="" height="24px">
+          Khuyến mãi
+        </a>
+        <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+          <img src="./src/assets/images/ic-header-auth.svg" alt="" height="24px">
+          Tài khoản
+        </a>
+      </div>
+    </nav>
   </header>
 
   <div id="main">
@@ -229,8 +252,8 @@
             <label for="" class="_lb-book-ticket _font-anton form-label mb-0 text-uppercase">Đặt vé nhanh
             </label>
           </div>
-          <div class="col col-12 col-md-2 my-2 my-md-0">
-            <select title="Chọn rạp" name="" class="_select-quick _font-anton form-select text-center text-md-start">
+          <div class="col col-12 col-md-2 my-2 my-md-0 d-flex align-items-center">
+            <select title="Chọn rạp" name="" class="_select-quick _font-anton form-select text-center text-md-start my-auto">
               <option class="" hidden selected>1. Chọn Rạp</option>
               <option class="_option _font-inherit" value="Hue">ForestCineplex Huế</option>
               <option class="_option" value="HaNoi">ForestCineplex Hà Nội</option>
@@ -240,7 +263,7 @@
             </select>
           </div>
 
-          <div class="col col-12 col-md-2 my-2 my-md-0">
+          <div class="col col-12 col-md-2 my-2 my-md-0 d-flex align-items-center">
             <select title="Chọn phim" name="" id=""
               class="_select-quick _font-anton form-select text-center text-md-start _disabled">
               <option class="" hidden selected>2. Chọn Phim</option>
@@ -255,7 +278,7 @@
             </select>
           </div>
 
-          <div class="col col-12 col-md-2 my-2 my-md-0">
+          <div class="col col-12 col-md-2 my-2 my-md-0 d-flex align-items-center">
             <select title="Chọn ngày" name="" id=""
               class="_select-quick _font-anton form-select text-center text-md-start _disabled">
               <option class="" hidden selected>3. Chọn Ngày</option>
@@ -267,7 +290,7 @@
             </select>
           </div>
 
-          <div class="col col-12 col-md-2 text-center my-2 my-md-0">
+          <div class="col col-12 col-md-2 text-center my-2 my-md-0 d-flex align-items-center">
             <select title="Chọn Suất" name="" id=""
               class="_select-quick _font-anton form-select text-center text-md-start _disabled">
               <option class="" hidden selected>4. Chọn Suất</option>
@@ -293,7 +316,7 @@
       <!-- End: Booking quick  -->
 
       <div class="mt-5">
-        <h1 class="_font-anton h1 text-white text-center text-uppercase mb-md-5 mb-0">Phim đang chiếu</h1>
+        <h1 class="_font-anton h1 text-white text-center text-uppercase mb-md-5 mb-0 w-100">Phim đang chiếu</h1>
 
         <!-- PC & Tablet - Film showing -->
 
@@ -1114,7 +1137,13 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-          
+        <div class="d-flex w-100 justify-content-center mt-md-5 pt-md-4">
+          <a href="" class="_btn-outline _font-anton btn py-2 px-5">Xem thêm</a>
+        </div>
+      </div>
+
+      <div class="mt-5 pt-md-5">
+        <h1 class="_font-anton h1 text-white text-center text-uppercase">Phim sắp chiếu</h1>
       </div>
 
 

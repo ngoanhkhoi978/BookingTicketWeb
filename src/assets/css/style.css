@@ -1,3 +1,23 @@
+/* Responsive  */
+
+/* Tablet mini - Tablet medium  */
+@media (min-width: 48em) and (max-width: 61.9375em) { 
+    #main ._buy-ticket-quick ._select-quick {
+        font-size: 12px !important;
+    }
+
+    #main ._buy-ticket-quick ._lb-book-ticket {
+        font-size: 20px !important;
+    }
+
+    #main ._buy-ticket-quick ._btn-book-now {
+        font-size: 14px !important;
+    }
+}
+
+
+
+
 
 /* Common */
 
@@ -153,6 +173,49 @@
     width: 100%;
 }
 
+._btn-outline {
+    border: .1rem solid #f3ea28;
+    color: #f3ea28;
+    position: relative;
+    z-index: 1
+}
+
+._btn-outline:after,._btn-outline:before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-in-out;
+}
+
+._btn-outline:before {
+    background: transparent;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -2
+}
+
+._btn-outline:after {
+    background: linear-gradient(90deg,#ff6d00,#ffc107);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 0;
+    z-index: -1
+}
+
+._btn-outline:hover {
+    color: #fff
+}
+
+._btn-outline:hover:before {
+    width: 0
+}
+
+._btn-outline:hover:after {
+    width: 100%
+}
+
 
 
 
@@ -183,6 +246,15 @@
 
 #header .offcanvas-header {
     background-color: #0f172a
+}
+
+#header ._navbar-bottom-mobile {
+    background-color: #663399;
+}
+
+#header ._navbar-bottom-mobile a {
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 

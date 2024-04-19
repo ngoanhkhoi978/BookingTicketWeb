@@ -1,3 +1,19 @@
+//Show-Hidden nav-bottom
+var menuMobile = document.querySelector('#btn-menu-mobile')
+menuMobile.addEventListener('click',function(){
+    let navBottomMobile = document.querySelector('._navbar-bottom-mobile')
+    navBottomMobile.classList.add('d-none')
+})
+
+var closeMenuMobile = document.querySelector('._btn-close-menu-mobile')
+closeMenuMobile.addEventListener('click',function(){
+    let navBottomMobile = document.querySelector('._navbar-bottom-mobile')
+    navBottomMobile.classList.remove('d-none')
+})
+
+
+
+
 
 // Set value for date option 
 var optChooseDate = document.querySelectorAll('._option._opt-choose-date');
