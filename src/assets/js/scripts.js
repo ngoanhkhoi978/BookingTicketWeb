@@ -22,3 +22,46 @@ for (let i = 0; i < selectQuicks.length; i++) {
         } catch(error) {}
     })
 }
+
+
+// Film showing 
+// responsiveSliderShowing()
+// window.addEventListener('resize',responsiveSliderShowing)
+
+
+// function responsiveSliderShowing() {
+//     function hiddenAllSiderShowing() {
+//         let pc = document.querySelector('#slider-showing ._pc')
+//         let tablet = document.querySelector('#slider-showing ._tablet')
+//         let mobile = document.querySelector('#slider-showing ._mobile')
+
+//         pc.classList.add('d-none')
+//         tablet.classList.add('d-none')
+//         mobile.classList.add('d-none')
+//     }
+
+//     let browserWidth = window.innerWidth;
+    
+//     // Mobile
+//     if (browserWidth < 768) {
+//         hiddenAllSiderShowing()
+//         let mobile = document.querySelector('#slider-showing ._mobile')
+//         mobile.classList.remove('d-none')
+
+
+        
+//     }
+
+//     if (browserWidth >= 768 && browserWidth<1200) {
+//         hiddenAllSiderShowing()
+//     }
+
+//     if (browserWidth >= 1200) {
+//         hiddenAllSiderShowing()
+//     }
+
+// }
+
+
+
+
