@@ -30,7 +30,7 @@
           <span class="_mycom text-white _weight-500">ForestCineplex</span>
         </a>
         <div class="d-none d-md-inline-flex justify-content-center flex-grow-1">
-          <a href="#" id="btn-buy-ticket" class="_btn-pri btn mx-1 d-flex align-items-center">
+          <a href="#-booking" id="btn-buy-ticket" class="_btn-pri btn mx-1 d-flex align-items-center">
             <img src="./src/assets/images/ic-ticket.svg" width="20px" alt="">
             <span class="_lb-btn-nav _font-anton text-uppercase ms-1">Đặt vé ngay</span>
           </a>
@@ -189,7 +189,7 @@
   </header>
 
   <div id="main">
-    <div class="container pt-md-5 w-100" style="height: 20000px;">
+    <div class="container pt-md-5 w-100" style="height: 5000px;">
       <!-- Begin: Slider  -->
       <div id="slider" class="_silder carousel slide position-relative" data-bs-ride="carousel">
 
@@ -315,7 +315,7 @@
       </div>
       <!-- End: Booking quick  -->
 
-      <div class="_container-show mt-5">
+      <div id="-film" class="_container-show mt-5">
         <h1 class="_font-anton h1 text-white text-center text-uppercase mb-md-5 mb-0 w-100">Phim đang chiếu</h1>
 
         <!-- PC & Tablet - Film showing -->
@@ -1967,6 +1967,7 @@
         </div>
       </div>
 
+      <!-- Introduce Membership  -->
       <div class="_introduce-membership mt-5 position-relative">
         <img src="./src/assets/images/bg-cine.png" alt="" class="flex-grow-1" style="width: 100%; filter: blur(5px);">
         <div class="position-absolute top-0 end-0 bottom-0 start-0 d-flex align-items-md-center justify-content-around flex-column-reverse flex-md-row">
@@ -1992,10 +1993,47 @@
         </div>
       </div>
 
+      <!-- Contact  -->
+      <div id="contact" class="container-fluid row mt-5 p-0">
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-around" style="height: 400px;">
+          <p class="_hd-contact text-white text-uppercase text-center ">Liên hệ với chúng tôi</p>
+          <a rel="noopener" href="https://www.facebook.com/profile.php?id=61558381960991" target="_blank" class="d-flex align-items-center text-decoration-none text-white w-100 p-xl-5" style="">
+            <div class="_bg-facebook w-100 position-relative ms-md-5 d-flex align-items-center flex-row-reverse">
+              <img src="./src/assets/images/fb.webp" width="150px" alt="" class="_icon-facebook position-absolute">
+              <span class="-lb-fb">Facebook</span>
+            </div>
+          </a>
+
+          <a rel="noopener" href="https://zalo.me" target="_blank" class="d-flex align-items-center text-decoration-none text-white w-100 p-xl-5">
+            <div class="_bg-zalo w-100 position-relative ms-md-5 d-flex align-items-center">
+              <img src="./src/assets/images/zl.webp" width="150px" alt="" class="_icon-zalo position-absolute">
+              <span class="-lb-zl">Zalo</span>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-around">
+          <form action="" class="w-100 p-xl-5">
+            <p class="_hd-form-contact h5 text-white text-uppercase">Thông tin liên hệ</p>
+            <input type="text" name="" id="" class="form-control" placeholder="Họ và tên">
+            <input type="gmail" name="" id="" class="form-control" placeholder="Điền email">
+            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Thông điệp bạn muốn truyền tải"></textarea>
+
+            <a class="_btn-pri btn form-submit _font-anton w-100 w-md-50">Gửi ngay</a>
+          </form>
+
+        </div>
+      </div>
+
 
 
       </div>
     <script src="./src/assets/js/scripts.js"></script>
+  </div>
+
+  <div id="footer">
+
+  </div>
 </body>
 
 </html>

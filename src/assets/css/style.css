@@ -15,11 +15,44 @@
     }
 }
 
+/* <= Tablet medium  */
+@media (max-width: 61.9375em) {
+    #contact ._hd-contact {
+        font-size: 35px !important;
+    }
+}
+
+
+
+/* >= tablet - mini  */
+@media (min-width: 48em) {
+    .w-md-50 {
+        width: 50% !important;
+    }
+    #contact ._bg-facebook { 
+        margin-left: 70px !important;
+    }
+        
+
+}
+
+
+
 
 
 
 
 /* Common */
+
+
+
+
+._hover-up-down {
+}
+
+._hover-up-down:hover {
+    animation: up-down 1s infinite;
+}
 
 
 
@@ -384,6 +417,93 @@
 
 #main ._introduce-membership .card-text {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+#contact ._bg-facebook {
+    background: linear-gradient(106deg,#639,#36c 102.69%);
+    padding-right: 30px;
+    height: 4rem;
+    border-radius: 5px;
+}
+
+#contact ._bg-zalo {
+    background: linear-gradient(106deg,#639,#36c 102.69%);
+    padding-left: 30px;
+    height: 4rem;
+    border-radius: 5px;
+    margin-right: 70px !important;
+}
+#contact ._icon-facebook {
+    top: 0;
+    left: 0;
+    transform: translate(-25%,-35%);
+}
+
+#contact ._bg-facebook:hover ._icon-facebook {
+    animation: up-down-fb 4s infinite;
+}
+
+@keyframes up-down-fb {
+    0%, 100% {
+        transform: translate(-25%, -35%);
+    }
+    50% {
+        transform: translate(-25%, calc(-35% + 15px));
+    }
+    25%, 75% {
+        transform: translate(-25%, calc(-35% - 15px));
+    }
+
+}
+
+#contact ._icon-zalo {
+    top: 0;
+    right: 0;
+    transform: translate(60%,-20%);
+}
+
+#contact ._bg-zalo:hover ._icon-zalo {
+    animation: up-down-zl 4s infinite;
+}
+
+@keyframes up-down-zl {
+    0%, 100% {
+        transform: translate(60%,-20%);
+    }
+    50% {
+        transform: translate(60%, calc(-20% + 15px));
+    }
+    25%, 75% {
+        transform: translate(60%, calc(-20% - 15px));
+    }
+
+}
+
+
+#contact .-lb-fb, #contact .-lb-zl  {
+    font-size: 32px;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+#contact ._hd-contact {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+
+#contact ._hd-form-contact {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    border-radius: 10px;
+}
+
+#contact form .form-control {
+    margin-bottom: 20px;
+    min-height: 45px;
 }
 
 
