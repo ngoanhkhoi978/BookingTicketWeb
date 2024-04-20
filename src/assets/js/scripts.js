@@ -29,10 +29,16 @@ for (var i = 0; i < optChooseDate.length; i++) {
 }
 
 // JS - book ticket quick 
-var selectQuicks = document.querySelectorAll('._select-quick')
+var selectQuicks = Array.from(document.querySelectorAll('._select-quick'))
+var btnBookQuick = document.querySelector('._btn-book-now')
+selectQuicks.push(btnBookQuick)
 for (let i = 0; i < selectQuicks.length; i++) {
     selectQuicks[i].addEventListener('change',function() {
-        selectQuicks[i].classList.add('isActive')
+        if (i == selectQuicks.length-1) {
+            selectQuicks[i].classList.add('_btn-second')
+        } else {
+            selectQuicks[i].classList.add('isActive')
+        }
         try {
             selectQuicks[i+1].classList.remove('_disabled')
         } catch(error) {}

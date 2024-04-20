@@ -326,6 +326,7 @@
 
 ._select-quick.isActive {
     background-color: #f3ea28 !important;
+    transition: all ease-in-out 0.3s;
 }
 
 #main ._buy-ticket-quick {
@@ -347,9 +348,6 @@
     font-size: 22px;
 }
 
-#main ._buy-ticket-quick ._btn-book-now {
-    background-color: #663399;
-}
 
 #main ._card .card-title {
     font-weight: 600;
@@ -388,11 +386,18 @@
     margin-right: -21px;
 }
 
+#main ._introduce-membership ._card-member:hover, #main ._introduce-membership ._card-vip:hover {
+    box-shadow: 0 0 10px yellow;
+    transition: all ease-in-out 0.5s;
+}
+
 
 #main ._introduce-membership ._card-member, #main ._introduce-membership ._card-vip {
     background-color: rgba(100, 100, 100, 0.7);
     border-radius: 10px;
-
+    box-shadow: 0 0 10px transparent;
+    transition: all ease-in-out 0.5s;
+    
 }
 
 #main ._introduce-membership ._card-member  .card-title {
