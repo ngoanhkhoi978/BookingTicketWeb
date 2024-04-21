@@ -20,6 +20,9 @@
     #contact ._hd-contact {
         font-size: 35px !important;
     }
+    ._text-center-tablet-less {
+        text-align: center;
+    }
 }
 
 
@@ -32,9 +35,22 @@
     #contact ._bg-facebook { 
         margin-left: 70px !important;
     }
+
+    ._pointer-events-md-none {
+        pointer-events: none;
+    }
+
         
 
 }
+
+/* Mobile  */
+@media (max-width: 47.9375em) {
+    ._text-mobile-center {
+        text-align: center;
+    }
+}
+
 
 
 
@@ -43,18 +59,31 @@
 
 
 /* Common */
-
-
-
-
-._hover-up-down {
+@keyframes shine {
+    0% {
+        -webkit-mask-position: 150%;
+        mask-position: 150%;
+    }
+    100% {
+        -webkit-mask-position: -50%;
+        mask-position: -50%;
+    }
 }
 
-._hover-up-down:hover {
-    animation: up-down 1s infinite;
+._hover-shine:hover {
+    color:yellow !important;
+    animation: shine 2s infinite;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(243, 234, 40, .6) 30%, #f3ea28 50%, rgba(243, 234, 40, .6) 70%);
+    -webkit-mask-size: 200%;
+    mask-size: 200%;
+    mask-image: linear-gradient(-75deg, rgba(243, 234, 40, .6) 30%, #f3ea28 50%, rgba(243, 234, 40, .6) 70%);
 }
 
 
+
+.w-40 {
+    width: 40% !important;
+}
 
 ._weight-500 {
     font-weight: 500;
@@ -513,6 +542,58 @@
 
 #footer {
     background: linear-gradient(106deg, #639, #36c 102.69%);
+}
+
+#footer ._icon-mycom {
+    transform: translateX(-10px);
+}
+
+#footer ._mycom {
+    font-size: 30px;
+}
+
+#footer ._slogan {
+    font-size: 18px;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+
+#footer li {
+    min-height: 40px;
+}
+
+#footer li a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+#footer ._lb-footer {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    height: 40px;
+    color: white;
+}
+
+#footer ._icons {
+    font-size: 38px;
+}
+
+#footer ._icons  ._icon {
+    position: relative;
+    top: 0;
+    transition: all ease-in 0.3s;
+}
+
+#footer ._icons ._icon:hover {
+    transition: all ease-in 0.3s;
+    transform: translateY(-20%);
 }
 
 
