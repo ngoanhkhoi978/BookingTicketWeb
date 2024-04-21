@@ -50,8 +50,9 @@
         text-align: center;
     }
 
-    body {
-        overflow-x: hidden;
+    body,html {
+        position: relative;
+        overflow: hidden;
     }
 }
 
