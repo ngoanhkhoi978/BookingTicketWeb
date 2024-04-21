@@ -49,6 +49,10 @@
     ._text-mobile-center {
         text-align: center;
     }
+
+    body {
+        overflow-x: hidden;
+    }
 }
 
 
