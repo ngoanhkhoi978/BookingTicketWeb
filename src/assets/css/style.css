@@ -511,6 +511,10 @@
     min-height: 45px;
 }
 
+#footer {
+    background: linear-gradient(106deg, #639, #36c 102.69%);
+}
+
 
 
 
