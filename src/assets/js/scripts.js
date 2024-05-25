@@ -1,3 +1,34 @@
+
+
+
+
+//Check form
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email.toLowerCase());
+}
+
+function checkinputform() {
+    let fullname = document.getElementById('fullname')
+    let email = document.getElementById('email')
+    let describes = document.getElementById('describes')
+    if (fullname.value == '') {
+        alert('Vui lòng nhập tên');
+        return
+    }
+    if (!validateEmail(email.value)) {
+        alert('Email không hợp lệ!');
+        return
+    }
+    if (describes.value == '') {
+        alert('Vui lòng nhập nội dung');
+        return
+    }
+    alert('Đã lưu thông tin đóng góp của bạn');
+}
+
+
+
 //Show-Hidden nav-bottom
 var menuMobile = document.querySelector('#btn-menu-mobile')
 menuMobile.addEventListener('click',function(){
@@ -10,10 +41,6 @@ closeMenuMobile.addEventListener('click',function(){
     let navBottomMobile = document.querySelector('._navbar-bottom-mobile')
     navBottomMobile.classList.remove('d-none')
 })
-
-
-
-
 
 // Set value for date option 
 var optChooseDate = document.querySelectorAll('._option._opt-choose-date');
@@ -44,6 +71,8 @@ for (let i = 0; i < selectQuicks.length; i++) {
         } catch(error) {}
     })
 }
+
+
 
 
 
