@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForestCineplex - Hệ thống bán vé xem phim</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/movie-infomation.css">
+
+    <!-- Jquery-3  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="header" class="pos-relative d-block">
+        <nav class="navbar fixed-top navbar-light">
+            <div class="container justify-content-md-start position-relative justify-content-between">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./favicon.ico" alt="" width="46px" class="d-inline-block align-text-top">
+                    <span class="_mycom text-white _weight-500">ForestCineplex</span>
+                </a>
+                <div class="d-none d-md-inline-flex justify-content-end flex-grow-1">
+                    <span class="text-white"></span>
+                </div>
+
+
+                <div class="_hd-right d-none d-md-inline-flex align-items-center">
+
+                    <a class="btn me-3 d-inline-flex align-items-center" data-bs-toggle="collapse" href="#search"
+                        role="button" aria-expanded="false" aria-controls="search">
+                        <img src="./src/assets/images/ic-search.svg" alt="" width="21px">
+                    </a>
+
+                    <a href="#" class="_lb-login text-decoration-none text-white align-items-center">
+                        <img src="./src/assets/images/ic-header-auth.svg" class="me-2" alt="" width="24px">
+                        <span class="_hover-yellow d-none d-lg-inline _weight-500">Đăng nhập</span>
+                    </a>
+                </div>
+
+                <!-- Mobile-menu  -->
+                <div class="d-md-none">
+                    <button id="btn-menu-mobile" class="navbar-toggler border-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-list text-white" style="font-size: 28px;"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header justify-content-center position-relative">
+                            <div class="d-flex align-items-center">
+                                <img src="./favicon.ico" width="40px" alt="">
+                                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel _weight-500">
+                                    ForestCineplex</h5>
+                            </div>
+                            <a type="button" class="_btn-close-menu-mobile position-absolute top-0 end-0 px-4"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="bi bi-x text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item text-uppercase py-2 border-bottom border-1 border-dark">
+                                    <a class="nav-link active text-white _hover-yellow _weight-500" aria-current="page"
+                                        href="#">Trang
+                                        chủ</a>
+                                </li>
+                                <li class="nav-item text-uppercase py-2 border-bottom border-1 border-dark">
+                                    <a class="nav-link text-white _hover-yellow _weight-500" href="#">Đặt vé</a>
+                                </li>
+                                <li class="nav-item text-uppercase py-2 border-bottom border-1 border-dark">
+                                    <a class="nav-link text-white _hover-yellow _weight-500" href="#">Bắp nước</a>
+                                </li>
+                                <li class="nav-item text-uppercase py-2 border-bottom border-1 border-dark">
+                                    <a class="nav-link text-white _hover-yellow _weight-500" href="#">Lịch chiếu</a>
+                                </li>
+                                <li class="nav-item text-uppercase py-2 border-bottom border-1 border-dark">
+                                    <a class="nav-link text-white _hover-yellow _weight-500" href="#">Khuyến mãi</a>
+                                </li>
+                                <li class="nav-item text-uppercase py-2 border-bottom border-1 border-dark">
+                                    <a class="nav-link text-white _hover-yellow _weight-500" href="#">Thành viên</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+
+                            <hr class="w-100 my-4" style="height: 2px; background-color: #ccc;">
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Mobile-nav  -->
+
+
+
+
+                <hr class="d-none d-md-inline w-100 my-1 text-white">
+                <div class="_subnav w-100 d-none d-md-flex justify-content-between py-1">
+                    <ul class="d-flex list-unstyled mb-0">
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="nav-select-location text-decoration-none text-white me-4 _hover-yellow _weight-500">
+                                <i class="bi bi-geo-alt"></i>
+                                Chọn rạp
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white _hover-yellow ms-3 _weight-500">
+                                <i class="bi bi-calendar"></i>
+                                Lịch chiếu
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex list-unstyled mb-0">
+
+                        <li>
+                            <a href="#" class="text-white ms-2 _hover-underline-yellow _weight-500">Giới thiệu</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white ms-2 _hover-underline-yellow _weight-500">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="search" class="_search collapse fade w-100 mt-3 mb-1">
+                    <form action="" class="position-relative">
+                        <input type="text" class="form-control" placeholder="Nhập tên phim">
+                        <a href="" class="form-submit position-absolute top-0 end-0 h-100 text-dark">
+                            <i class="bi bi-search mx-3" style="font-size: 24px"></i>
+                        </a>
+                    </form>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+        <!-- Begin: Nav-fixed-bottom mobile  -->
+        <nav class="_navbar-bottom-mobile navbar fixed-bottom bg-body-tertiary d-md-none ">
+            <div class="container-fluid row g-0">
+                <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+                    <img src="./src/assets/images/ic-movie.svg" height="24px" style="filter: invert(1);" alt="">
+                    Lịch chiếu
+                </a>
+                <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+                    <img src="./src/assets/images/ic-cor.svg" alt="" height="24px">
+                    Bắp nước
+                </a>
+                <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+                    <img src="./src/assets/images/ic-ticket.svg" alt="" height="24px" style="filter: invert(1);">
+                    Đặt vé
+                </a>
+                <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+                    <img src="./src/assets/images/ic-mobile-gift.svg" alt="" height="24px">
+                    Khuyến mãi
+                </a>
+                <a href="#" class="col d-flex flex-column align-items-center text-white text-decoration-none">
+                    <img src="./src/assets/images/ic-header-auth.svg" alt="" height="24px">
+                    Tài khoản
+                </a>
+            </div>
+        </nav>
+        <!-- End: Nav-fixed-bottom mobile  -->
+
+        <!-- Select location -->
+        <div class="select_location position-fixed w-100 pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 d-inline-flex justify-content-center align-items-center h-100">
+                        <div class="">
+                            <i class="_hover-yellow bi bi-geo-alt-fill">ForestCinplex Huế</i>
+                        </div>
+                    </div>
+                    <div class="col-4 d-inline-flex justify-content-center align-items-center h-100">
+                        <div class="">
+                            <i class="_hover-yellow bi bi-geo-alt-fill">ForestCinplex Đà Nẵng</i>
+                        </div>
+                    </div>
+                    <div class="col-4 d-inline-flex justify-content-center align-items-center h-100">
+                        <div class="">
+                            <i class="_hover-yellow bi bi-geo-alt-fill">ForestCinplex Hà Nội</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12 mb-5 mb-md-0">
+                    <img id="poster" src="./src/assets/images/film/showing/film (2).webp" alt="" style="width: 100%;">
+                </div>
+                <div class="information-movie col-lg-7 col-md-6 col-12 ps-3">
+                    <h3 id="title-movie" class="_font-anton text-white text-uppercase">GODZILLA X KONG: ĐẾ CHẾ MỚI (K)</h3>
+                    <div class="row">
+
+                        <div class="text-detail col-6 col-lg-12">
+                            <i class="bi bi-tag text-warning"></i>
+                            <span id="type" class="_font-josefin text-white">Hành động</span>
+                        </div>
+    
+                        <div class="text-detail col-6 col-lg-12">
+                            <i class="bi bi-globe-americas text-warning"></i>
+                            <span id="country" class="_font-josefin text-white">Việt Nam</span>
+                        </div>
+    
+                        <div class="text-detail col-6 col-lg-12">
+                            <i class="bi bi-clock text-warning"></i>
+                            <span id="duration" class="_font-josefin text-white">115 phút</span>
+                        </div>
+    
+                        <div class="text-detail col-6 col-lg-12">
+                            <i class="bi bi-ticket text-warning"></i>
+                            <span id="price" class="_font-josefin text-white">45.000 vnđ</span>
+                        </div>
+
+                        <div class="text-detail text-white col-12 mt-4">
+                            <h4 class="_font-anton text-white text-uppercase mb-3">Mô tả</h4>
+                            <p class="_font-josefin text-small"><small id="director">Đạo diễn: </small></p>
+                            <p class="_font-josefin text-small"><small id="actor">Diễn viên: </small></p>
+                            <p class="_font-josefin text-small"><small id="release">Khởi chiếu: </small></p>
+                        </div>
+                        <div class="text-detail text-white col-12 mt-4">
+                            <h4 class="_font-anton text-white text-uppercase mb-3">Nội dung phim</h4>
+                            <p id="content" class="_font-josefin">
+                            </p>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button class="btn _btn-pri _font-anton text-uppercase w-grow-1">Đặt vé ngay</button>
+                        </div>
+                    </div>
+         
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container pt-md-5 pb-5 pb-md-3">
+
+            <div class="row g-md-5 g-4">
+                <div class="col-12 col-md-12 order-md-first col-lg-4 order-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#"
+                            class="text-decoration-none text-white d-flex align-items-center w-100 flex-wrap justify-content-center justify-content-lg-start">
+                            <img src="./favicon.ico" width="64px" alt="" class="_icon-mycom">
+                            <span class="_mycom _font-anton">ForestCinplex</span>
+                            <p class="_slogan _font-josefin mt-1 mb-4 w-100 _text-center-tablet-less">Experience the
+                                World of Cinema!
+                            </p>
+                        </a>
+                        <div class="d-none d-md-flex w-100 justify-content-between">
+                            <a href="" class="_btn-pri btn _font-anton text-uppercase w-50 me-1">Đặt vé</a>
+                            <a href="" class="_btn-outline btn _font-anton text-uppercase w-50 ms-1">Đặt bắp nước</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-3 col-lg-4">
+                    <a href=""
+                        class="_lb-footer text-decoration-none w-100 d-flex align-items-center justify-content-center d-md-block _pointer-events-md-none _hover-shine">
+                        <span>Tài khoản</span>
+                    </a>
+                    <ul class="d-none d-md-block">
+                        <li><a href="" class="_hover-shine">Đăng nhập</a></li>
+                        <li><a href="" class="_hover-shine">Đăng ký</a></li>
+                        <li><a href="" class="_hover-shine">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-lg-4">
+                    <a href=""
+                        class="_lb-footer text-decoration-none w-100 d-flex align-items-center justify-content-center d-md-block _pointer-events-md-none _hover-shine">
+                        <span>Thuê sự kiện</span>
+                    </a>
+                    <ul class="d-none d-md-block">
+                        <li><a href="" class="_hover-shine">Thuê rạp</a></li>
+                        <li><a href="" class="_hover-shine">Các loại cho thuê khác</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-12 order-last col-md-12 order-md-first col-lg-4 order-lg-0">
+                    <div class="_icons d-flex justify-content-around d-lg-block h-100">
+                        <a href="" class="_icon text-white me-lg-3 ms-lg-0 d-inline-block"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="" class="_icon text-white me-lg-3 d-inline-block"><i class="bi bi-youtube"></i></a>
+                        <a href="" class="_icon text-white me-lg-3 d-inline-block"><i class="bi bi-tiktok"></i></a>
+                        <a href="" class="_icon text-white me-lg-3 d-inline-block"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-4">
+                    <a href=""
+                        class="_lb-footer text-decoration-none w-100 d-flex align-items-center justify-content-center d-md-block _pointer-events-md-none _hover-shine">
+                        <span>Xem phim</span>
+                    </a>
+                    <ul class="d-none d-md-block">
+                        <li><a href="" class="_hover-shine">Phim đang chiếu</a></li>
+                        <li><a href="" class="_hover-shine">Phim sắp chiếu</a></li>
+                        <li><a href="" class="_hover-shine">Suất chiếu đặt biệt</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-lg-4">
+                    <a href=""
+                        class="_lb-footer text-decoration-none w-100 d-flex align-items-center justify-content-center d-md-block _pointer-events-md-none _hover-shine">
+                        <span>ForestCineplex</span>
+                    </a>
+                    <ul class="d-none d-md-block">
+                        <li><a href="" class="_hover-shine">Giới thiệu</a></li>
+                        <li><a href="" class="_hover-shine">Liên hệ</a></li>
+                        <li><a href="" class="_hover-shine">Tuyển dụng</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-white" style="height: 2px;">
+            <div class="d-flex justify-content-between">
+                <span class="text-white _font-josefin">&#169 2024 ForestCineplex. All right reserved.</span>
+            </div>
+        </div>
+        <div class="py-3 py-md-0">
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+    <script src="./src/assets/js/fetch-details-movie.js"></script>
+
+</body>
+
+</html>

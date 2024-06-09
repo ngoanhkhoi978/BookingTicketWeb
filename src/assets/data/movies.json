@@ -1,0 +1,278 @@
+[
+    {
+        "id": 1,
+        "name": "GODZILLA X KONG: Đế chế mới",
+        "poster":"./src/assets/images/film/showing/film (1).webp",
+        "status":"Đang chiếu",
+        "type": "Hành động, viễn tưởng",
+        "country": "Hoa Kỳ",
+        "duration": 115,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Adam Wingard",
+            "actor":"Rebecca Hall, Brian Tyree Henry, Dan Stevens, Kaylee Hottle, Alex Ferns, Trần Pháp Lai",
+            "release":"29 tháng 3 năm 2024"
+        },
+        "content":"Kong và Godzilla – hai sinh vật vĩ đại huyền thoại, hai kẻ thủ truyền kiếp sẽ cùng bắt tay thực thi một sứ mệnh chung mang tính sống còn để bảo vệ nhân loại, và trận chiến gắn kết chúng với loài người mãi mãi sẽ bắt đầu.",
+        "trailer":"https://www.youtube.com/watch?v=qqrpMRDuPfc&t=53s"
+    },
+    {
+        "id": 2,
+        "name": "Cái giá của hạnh phúc",
+        "poster":"./src/assets/images/film/showing/film (35).webp",
+        "status":"Đang chiếu",
+        "type": "Hành động",
+        "country": "Việt Nam",
+        "duration": 125,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Nguyễn Ngọc Lâm",
+            "actor":"Hữu Châu, Thái Hòa, Xuân Lan, Uyển Ân, Lâm Thanh Nhã, Trương Thanh Long, Trâm Anh",
+            "release":"19 tháng 4 năm 2024"
+        },
+        "content":"Cái giá của hạnh phúc” là một bộ phim khắc họa sự phức tạp của cuộc sống gia đình và hôn nhân thông qua câu chuyện về gia đình ông Thoại (Thái Hòa) và bà Dương (Xuân Lan). Dù bề ngoài tươi đẹp với sự nghiệp thịnh vượng và con cái ngoan hiền, gia đình này lại chứa đựng nhiều bí mật và mâu thuẫn.",
+        "trailer":"https://www.youtube.com/watch?v=79BznZKQwIQ"
+    },
+    {
+        "id": 3,
+        "name": "Thanh xuân: Lữ Trình hướng về em",
+        "poster":"./src/assets/images/film/showing/film (23).webp",
+        "status":"Đang chiếu",
+        "type": "Tình cảm, lãng mạng",
+        "country": "Đài Loan",
+        "duration": 123,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Michihito Fujii",
+            "actor":"Hứa Quang Hán, Kiyohara Kaya, Trương Hiếu Toàn, Shunsuke Michieda, Haru Kuroki, Yutaka Matsushige, Kuroki Hitomi",
+            "release":"12 tháng 4 năm 2024"
+        },
+        "content":"Jimmy, một học sinh trung học làm việc mùa hè tại một cửa hàng, gặp và dần nảy sinh tình cảm với Ami, một du khách lớn hơn anh 4 tuổi từ Nhật Bản. Sau một mùa hè làm việc và trải nghiệm bên nhau, Ami quay về Nhật, để lại cho Jimmy lời hứa mơ hồ. 18 năm sau, Jimmy nhận được bưu thiếp từ Ami, khơi dậy ký ức và quyết định đầu tiên đến Nhật Bản để đối diện với quá khứ và hiện tại của mình.",
+        "trailer":"https://www.youtube.com/watch?v=M7ylLPdaVvU"
+    },
+    {
+        "id": 4,
+        "name": "B4S - Trước giờ 'Yêu'",
+        "poster":"./src/assets/images/film/showing/film (21).webp",
+        "status":"Đang chiếu",
+        "type": "Tình cảm, hài cốt",
+        "country": "Việt Nam",
+        "duration": 98,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Tùng Leo, Michael Thái, Huỳnh Anh Duy",
+            "actor":"Jun Vũ, Khánh Vân, Khazsak, Tôn Kinh Lâm, Tùng, Việt Hưng, Vinh Râu,…",
+            "release":"19 tháng 4 năm 2024"
+        },
+        "content":"B4S - Trước Giờ 'Yêu' sẽ bắt đầu bằng một đêm “nhớ đời” của hai nhóm bạn thân tại quán bar. Và sau đó, khán giả sẽ được theo dõi câu chuyện tình yêu của từng người trong “đêm định mệnh” ấy.",
+        "trailer":"https://www.youtube.com/watch?v=JJ_SyVWN9g0"
+    },
+    {
+        "id": 5,
+        "name": "Luca: Mùa hè của Luca",
+        "poster":"./src/assets/images/film/showing/film (30).webp",
+        "status":"Đang chiếu",
+        "type": "Hoạt hình, vui nhộn",
+        "country": "Hoa Kỳ",
+        "duration": 95,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Enrico Casarosa",
+            "actor":"Jacob Tremblay, Jack Dylan Grazer, Emma Berman, Saverio Raimondo, Maya Rudolph, Marco Barricelli, Jim Gaffigan",
+            "release":"18 tháng 6 năm 2021"
+        },
+        "content":"Phim 'Luca' là cuộc phiêu lưu của cậu bé thủy quái Luca ở Riviera Italia, khám phá thế giới bên trên mặt nước. Luca và người bạn mới Alberto, cùng cô bé loài người Giulia, tham gia cuộc đua xe Vespa và cuối cùng giành chiến thắng, mặc dù phải đối mặt với việc lộ thân phận thủy quái. Dù vậy, họ được gia đình và dân làng chấp nhận, kết thúc bằng tình bạn và sự đồng cảm.",
+        "trailer":"https://www.youtube.com/watch?v=FzV3gRevq4Q"
+    },
+    {
+        "id": 6,
+        "name": "Tu viện máu",
+        "poster":"./src/assets/images/film/showing/film (20).webp",
+        "status":"Đang chiếu",
+        "type": "Kinh dị",
+        "country": "Hoa Kỳ",
+        "duration": 89,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Michael Mohan",
+            "actor":"Sydney Sweeney, Álvaro Morte, Benedetta Porcaroli, Dora Romano, Giorgio Colangeli, Simona Tabasco",
+            "release":"22 tháng 3 năm 2024"
+        },
+        "content":"Với đức tin sâu sắc, Cecilia đến với một tu viện cổ kính, nằm giữa một vùng quê đẹp nên thơ tại nước Ý trong sự chào đón của mọi người. Thế nhưng, những sự kiện kỳ lạ liên tiếp xảy ra, một bước ngoặt đưa Cecilia đến một vị trí cô không thể ngờ tới. Cùng với đó, những bí mật kinh hoàng đằng sau vẻ bình yên của tu viện này dần lộ diện.",
+        "trailer":"https://www.youtube.com/watch?v=5ff3iUauZko"
+    },
+    {
+        "id": 7,
+        "name": "Yêu cuồng loạn",
+        "poster":"./src/assets/images/film/showing/film (28).webp",
+        "status":"Đang chiếu",
+        "type": "Lãng mạng, giật gân",
+        "country": "Hoa Kỳ",
+        "duration": 104,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Rose Glass",
+            "actor":"Kristen Stewart, Katy O'Brian, Jena Malone, Anna Baryshnikov, Dave Franco, Ed Harris",
+            "release":"8 tháng 3 năm 2024"
+        },
+        "content":"Vào những năm 80, một quản lý phòng tập sống ẩn Lou đã phải Jackie, một vận động viên thể hình đầy tham vọng đã đi xuyên thị trấn đến Las Vegas để thực hiện giấc mơ của mình. Nhưng mối quan hệ tình cảm của họ đã làm khơi dậy sự bạo lực và đẩy cả hai rơi vào mạng lưới của gia đình tội phạm nhà Lou.",
+        "trailer":"https://www.youtube.com/watch?v=Td37l9iYL2k"
+    },
+    {
+        "id": 8,
+        "name": "Anh hùng bàn phím",
+        "poster":"./src/assets/images/film/showing/film (37).webp",
+        "status":"Đang chiếu",
+        "type": "Hình sự, chính kịch",
+        "country": "Hàn Quốc",
+        "duration": 100,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Ahn Gooc-jin",
+            "actor":"Son Suk-ku, Kim Sung-cheol, Kim Dong-hwi, Hong Kyung",
+            "release":"27 tháng 3 năm 2024"
+        },
+        "content":"Im Sang-jin - một phóng viên mảng xã hội đã bị đình chỉ công tác sau bài phóng sự điều tra sai lệch về những lùm xùm của tập đoàn Manjun. Tưởng rằng phải chịu nỗi oan ức suốt đời, Im Sang-jin bất ngờ nhận được thông tin ẩn danh khẳng định anh không sai, mà mọi thứ đã bị thao túng bởi một “đội quân” trực tuyến: Chỉ cần có tiền, sự thật nào cũng hoá thành dối lừa, còn tin tức giả lại hoá thành sự thật. Quyết tâm dấn thân vào con đường điều tra “Team Aleph”, Im Sang-jin dần khám phá ra những bí mật động trời khi tiếp xúc với các thành viên chủ chốt của nhóm chuyên gieo rắc tin giả. Thế lực đứng sau các thông tin sai lệch có sức mạnh khủng khiếp đến nhường nào? Liệu Im Sang-jin có thể lật tẩy tất cả và giành chiến thắng giữa ranh giới mong manh của sự thật và dối trá?",
+        "trailer":"https://www.youtube.com/watch?v=Td37l9iYL2k"
+    },
+    {
+        "id": 9,
+        "name": "Thần bài trở lại tất tay",
+        "poster":"./src/assets/images/film/showing/film (38).webp",
+        "status":"Đang chiếu",
+        "type": "Hài hước, chính kịch",
+        "country": "Thái Lan",
+        "duration": 100,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Matt Lai",
+            "actor":"Jack Lim, Philip Keung Ho-Man, Namewee",
+            "release":"19 tháng 4 năm 2024"
+        },
+        "content":"Mang danh thần bài trăm trận trăm thắng, Trình Gia Lãng phát hoảng khi siêu năng lực mắt thần đột nhiên mất vào tay một kẻ gà mờ - Hoàng Tiểu Thất. Từ đây, cả hai phải miễn cưỡng hợp lực hòng chiến thắng vua bài - Vi Nhất Phú và làm lộ ra bí mật động trời...",
+        "trailer":"https://www.youtube.com/watch?v=9x0e3abGz2Y"
+    },
+    {
+        "id": 10,
+        "name": "Biệt đội săn ma: Kỷ nguyên băng giá",
+        "poster":"./src/assets/images/film/showing/film (36).webp",
+        "status":"Đang chiếu",
+        "type": "Hài, phiêu lưu, thần thoại",
+        "country": "Hoa Kỳ",
+        "duration": 120,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Gil Kenan",
+            "actor":"Paul Rudd, Carrie Coon, Finn Wolfhard, Mckenna Grace, Kumail Nanjiani, Patton Oswalt, Celeste O'Connor, Logan Kim, Bill Murray, Dan Aykroyd, Ernie Hudson, Annie Potts",
+            "release":"12 tháng 4 năm 2024"
+        },
+        "content":"Kỷ nguyên băng giá, gia đình Spengler đã quyết định họ sẽ rời khỏi vùng Summerville, Oklahoma để trở về nơi mà tất cả đã bắt đầu – trạm cứu hỏa mang tính biểu tượng của Thành phố New York – để giúp đỡ những thành viên của Biệt đội săn ma nguyên bản, những người đã phát triển nên một phòng thí nghiệm nghiên cứu bảo mật cấp cao để tìm cách đưa việc tiêu diệt các bóng ma lên một tầm cao mới! Tuy nhiên, sự cố về việc phát hiện ra một cổ vật đã giải phóng một thế lực bí ẩn và độc ác mới, được gọi là Death Chill, đã khiến cả những thành viên của Biệt đội săn ma cũ và mới phải cùng nhau kết hợp thành một lực lượng để bảo vệ ngôi nhà của họ cũng như là giải cứu thế giới khỏi số phận diệt vong và khó lường mà có thể sẽ vô tình ảnh hưởng đến lịch sử của thế giới với một Kỷ Băng Hà thứ hai.",
+        "trailer":"https://www.youtube.com/watch?v=XDXgU6u3WXk"
+    },
+    {
+        "id": 11,
+        "name": "Người 'Bạn' trong trí tưởng tượng",
+        "poster":"./src/assets/images/film/showing/film (32).webp",
+        "status":"Đang chiếu",
+        "type": "Kinh dị, thần bí",
+        "country": "Hoa Kỳ",
+        "duration": 104,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Jeff Wadlow",
+            "actor":"DeWanda Wise, Tom Payne, Taegen Burns, Pyper Braun, Matthew Sato, Veronica Falcón, Betty Buckley",
+            "release":"8 tháng 3 năm 2024"
+        },
+        "content":"Khi Jessica (DeWanda Wise) chuyển về ngôi nhà thời thơ ấu cùng gia đình thì cô con gái riêng bé bỏng Alice (Pyper Braun) vô tình tìm thấy một chú gấu nhồi bông tên là Chauncey ở tầng hầm. Cô bắt đầu chơi những trò chơi cùng với Chauncey, thoạt đầu các trò chơi đều rất vui tươi, thú vị nhưng càng về sau, các trò chơi dần trở nên nguy hiểm hơn. Khi những hành động của Alice trở nên kì lạ, Jessica nhận ra Chauncey không chỉ là một chú gấu nhồi bông vô hại bình thường mà nó đã mang đến rất nhiều nỗi kinh hoàng cho cô bé và gia đình",
+        "trailer":"https://www.youtube.com/watch?v=DqRVx0wfOBQ"
+    },
+    {
+        "id": 12,
+        "name": "Hào quang đẫm máu",
+        "poster":"./src/assets/images/film/showing/film (33).webp",
+        "status":"Đang chiếu",
+        "type": "Hồi hộp, kịch tính",
+        "country": "Hàn Quốc",
+        "duration": 98,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Yoo Young-su",
+            "actor":"Park Ji Yeon, Song Ji Eun, Kim Nu Ri",
+            "release":"12 tháng 4 năm 2024"
+        },
+        "content":"Câu chuyện kể về Lee Soo-yeon (do Ji-yeon thủ vai) - một nữ minh tinh màn bạc đang ở đỉnh cao sự nghiệp nhưng bất chợt tuột dốc không phanh vì tai nạn chết người do chính cô gây ra trong lúc say rượu. Sau thời gian dài “ở ẩn” để trả giá cho sai lầm, Lee Soo-yeon bắt đầu nuôi mộng trở lại với khán giả nhưng bê bối từ quá khứ của cô luôn bị người đời đay nghiến, châm chọc.",
+        "trailer":"https://www.youtube.com/watch?v=N_ieracfsts"
+    },
+    {
+        "id": 13,
+        "name": "Ngày tàn của đế quốc",
+        "poster":"./src/assets/images/film/showing/film (29).webp",
+        "status":"Đang chiếu",
+        "type": "Khoa học viễn tưỡng, hành động",
+        "country": "Hoa Kỳ",
+        "duration": 109,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Alex Garland",
+            "actor":"Kirsten Dunst, Wagner Moura, Cailee Spaeny,…",
+            "release":"12 tháng 4 năm 2024"
+        },
+        "content":"Trong một tương lai gần, một nhóm các phóng viên chiến trường quả cảm phải đấu tranh với thời gian và bom đạn nguy hiểm để đến kịp Nhà Trắng giữa bối cảnh nội chiến Hoa Kỳ đang tiến đến cao trào.",
+        "trailer":"https://www.youtube.com/watch?v=QGlgPf9jGMA"
+    },
+    {
+        "id": 14,
+        "name": "Đoá hoa mong manh",
+        "poster":"./src/assets/images/film/showing/film (27).webp",
+        "status":"Đang chiếu",
+        "type": "Tâm lý",
+        "country": "Việt Nam",
+        "duration": 95,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Mai Thu Huyền",
+            "actor":"Maya, Mai Thu Huyền, Đức Tiến, Quốc Cường, Trizzie Phương Trinh, Nhật Hạ, Nguyễn Anh Dũng",
+            "release":"12 tháng 4 năm 2024"
+        },
+        "content":"Sau một đêm hát thay cho người chị họ Ellie, Thạch Thảo lọt vào mắt xanh của Sơn - một nhà sản xuất âm nhạc. Cô nhận được lời mời thu âm hấp dẫn từ vợ chồng Sơn và trở nên nổi tiếng.Nàng càng lúc càng tỏa sáng như một đóa hoa, khiến đàn ông nào cũng muốn chở che, trong đó có cả Sơn. Vợ Sơn là một phụ nữ quyền lực, cô phát hiện ra chuyện này và tính toán âm mưu đối phó. Liệu đâu là ái tình phù phiếm, đâu là bến đỗ thật sự dành cho nàng? Và đóa hoa Thạch Thảo này có 'sớm nở chóng tàn' hay còn sự thật nào ẩn chứa đằng sau? Tất cả sẽ được giải đáp trong 'ĐÓA HOA MONG MANH'",
+        "trailer":"https://www.youtube.com/watch?v=11atDusAyWo"
+    },
+    {
+        "id": 15,
+        "name": "Điềm báo của quỷ",
+        "poster":"./src/assets/images/film/showing/film (34).webp",
+        "status":"Đang chiếu",
+        "type": "Kinh dị, thần bí",
+        "country": "Hoa Kỳ",
+        "duration": 117,
+        "price": "45.000",
+        "description":
+        {
+            "director":"Arkasha Stevenson",
+            "actor":"Nell Tiger Free, Tawfeek Barhom, Sonia Braga, Ralph Ineson, and Bill Nighy",
+            "release":"5 tháng 4 năm 2024"
+        },
+        "content":"Khi một cô gái người Mỹ được đưa đến Rome để bắt đầu phụng sự Giáo Hội, cô đã phát hiện ra thế lực hắc ám khiến cô hoài nghi về đức tin của chính mình, đồng thời hé lộ một âm mưu kinh hoàng nhằm tái sinh linh hồn ác quỷ đầu thai đến nhân thế.",
+        "trailer":"https://www.youtube.com/watch?v=AVAnQaJ49l8"
+    }
+
+
+
+
+
+
+]

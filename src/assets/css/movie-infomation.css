@@ -1,0 +1,17 @@
+main {
+    margin-top: 70px;
+    min-height: 1200px;
+}
+
+main #title-movie {
+    font-size: 34px;
+}
+
+main .information-movie .text-detail {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+main .text-detail p {
+    margin-bottom: 0px;
+}
